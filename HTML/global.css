@@ -1,0 +1,120 @@
+
+/*          CSS HTML et BODY            */
+
+html, body { /* Toute la page */
+margin: 0;
+padding: 0; 
+}
+body { /* CSS du body */
+background-color: white; 
+font-family: Verdana, sans-serif; 
+font-size: 100%;
+}
+
+/*          CSS TITRES et TEXTES            */
+
+h1 { /* Titre 1 */
+font-size: 2;
+}
+h2 { /* Titre 2 */
+font-size: 3;
+}
+h3 { /* Titre 3 */
+font-size: 4;
+}
+h4 { /* Titre 4 */
+font-size: 5;
+}
+h5 { /* Titre 5 */
+font-size: 6;
+}
+h6 { /* Titre 6 */
+font-size: 7;
+}
+
+p { /* Paragraphe */
+color: black; 
+}
+
+/*          CSS SPECIFIQUES            */
+
+.marge-p-index {
+margin:20px 5px 5px 5px;
+}
+
+.Adresse-Form {
+margin-left:0px;
+margin-right:200px;
+}
+
+/*          CSS COULEURS            */
+
+.ROUGE { /*Couleur ROUGE */
+color: red;
+}
+.BLEU { /*Couleur BLEU */
+color: blue;
+}
+.JAUNE { /*Couleur JAUNE */
+color: yellow;
+}
+.NOIR { /*Couleur NOIR */
+color: black;
+}
+.BLANC { /*Couleur BLANC */
+color: white;
+}
+.VERT { /*Couleur VERT */
+color: green;
+}
+.CYAN { /*Couleur CYAN */
+color: cyan;
+}
+
+/*          CSS PLACEMENTS            */
+
+hr { /*Sorte de barre horizontal*/
+display: block;
+height: 5;
+margin: 10px 0 10px;
+line-height: 10;
+}
+
+.TexteCentre { /*CSS Texte centré*/
+text-align: center;
+}
+.TexteGauche { /*CSS texte à gauche*/
+text-align: left;
+}
+.TexteDroite { /*CSS texte à droite*/
+text-align: right;
+}
+
+/*          CSS LIENS            */
+
+a:link { /*CSS des liens classiques */
+color: green;
+text-decoration: underline;
+}
+a:visited { /*CSS des liens déja visité */
+color: gray;
+}
+a:hover { /*CSS des liens lors du survole du curseur */
+color: red;
+text-decoration: none;
+}
+a:active, a:focus { /*CSS des liens lors de l'activation (clics) */
+color: blue;
+}
+
+/*          CSS TABLEAUX            *
+
+table,td {
+border: 2px solid #333;
+}
+
+thead,tfoot {
+background-color: #333;
+color: #fff;
+}
+									*/

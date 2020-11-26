@@ -1,0 +1,23 @@
+.header {
+background-color: blue;
+padding:20px 20px 20px 20px;
+}
+
+.body {
+background-color: yellow;
+padding: 10em;
+}
+
+.footer {
+background-color: lime; 
+padding:20px 20px 20px 20px;
+}
+
+nav {
+background-color: plum;
+}
+
+body {
+text-align: center;
+font-size: 40px;
+}
