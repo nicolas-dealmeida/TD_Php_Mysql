@@ -173,8 +173,9 @@ Function Menu() // Fonction affichant le menu.
 	<header>
         <div class='Menu-Nav'>
             <nav>
-                <ul class='Menu'>
-                    <li class='Sous-Menu-1'><a href=' '>HTML/CSS</a>
+				<ul class='Menu'>
+				<li class='Sous-Menu-1'><a href='Accueil.php'>Accueil</a></li>
+                    <li class='Sous-Menu-1'><a href='..\HTML\index.php'>HTML/CSS</a>
                         <ul class='Sous-Menu-S1'>
                             <li class='Sous-Menu-S1-1'><a href='..\HTML\index.php#HTML'>HTML</a>
                                 <ul class='Sous-Menu-S1-A'>
@@ -194,50 +195,57 @@ Function Menu() // Fonction affichant le menu.
                     </li>
                     <li class='Sous-Menu-1'><a href='..\PHP\index.php'>PHP</a>
                         <ul class='Sous-Menu-S1'>
-                            <li class='Sous-Menu-S1-1'><a href='..\PHP\index.php#TP1'>TP1</a>
+                            <li class='Sous-Menu-S1-1'><a href='..\PHP\index.php#TD1'>TD1</a>
                                 <ul class='Sous-Menu-S1-B'>
-                                    <li><a href=' '>Exercice 1</a></li>
-                                    <li><a href=' '>Exercice 2</a></li>
-                                    <li><a href=' '>Exercice 3</a></li>
+                                    <li><a href='..\PHP\TD_1_Exo_1.php'>Exercice 1</a></li>
+                                    <li><a href='..\PHP\TD_1_Exo_2.php'>Exercice 2</a></li>
+									<li><a href='..\PHP\TD_1_Exo_3.php'>Exercice 3</a></li>
+									<li><a href='..\PHP\TD_1_Exo_4.php'>Exercice 3</a></li>
+									<li><a href='..\PHP\TD_1_Exo_5.php'>Exercice 3</a></li>
+									<li><a href='..\PHP\TD_1_Exo_6.php'>Exercice 3</a></li>
+									<li><a href='..\PHP\TD_1_Exo_7.php'>Exercice 3</a></li>
+									<li><a href='..\PHP\TD_1_Exo_8.php'>Exercice 3</a></li>
+									<li><a href='..\PHP\TD_1_Final.php'>TP Final</a></li>
                                 </ul>
                             </li>
-                            <li class='Sous-Menu-S1-1'><a href='..\PHP\index.php#TP2'>TP2</a>
+                            <li class='Sous-Menu-S1-1'><a href='..\PHP\index.php#TD2'>TD2</a>
                                 <ul class='Sous-Menu-S1-B'>
-                                    <li><a href=' '>Exercice 1</a></li>
-                                    <li><a href=' '>Exercice 2</a></li>
-                                    <li><a href=' '>Exercice 3</a></li>
+                                    <li><a href='..\PHP\TD_2_Exo_1.php'>Exercice 1</a></li>
+                                    <li><a href='..\PHP\TD_2_Exo_2.php'>Exercice 2</a></li>
+									<li><a href='..\PHP\TD_2_Exo_3.php'>Exercice 3</a></li>
+									<li><a href='..\PHP\TD_2_Final.php'>TP Final</a></li>
                                 </ul>
                             </li>
-                            <li class='Sous-Menu-S1-1'><a href='..\PHP\index.php#TP3'>TP3</a>
+                            <li class='Sous-Menu-S1-1'><a href='..\PHP\index.php#TD3'>TD3</a>
                                 <ul class='Sous-Menu-S1-B'>
-                                    <li><a href=' '>Exercice 1</a></li>
-                                    <li><a href=' '>Exercice 2</a></li>
-                                    <li><a href=' '>Exercice 3</a></li>
+                                    <li><a href='..\PHP\TD_3_Exo_1.php'>Exercice 1</a></li>
+                                    <li><a href='..\PHP\TD_3_Exo_2.php'>Exercice 2</a></li>
+                                    <li><a href='..\PHP\TD_3_Exo_3.php'>Exercice 3</a></li>
                                 </ul>
                             </li>
                         </ul>
                     </li>
                     <li class='Sous-Menu-1'><a href='..\SQL\index.php'>SQL</a>
                         <ul class='Sous-Menu-S1'>
-                            <li class='Sous-Menu-S1-1'><a href='..\SQL\index.php#TP1'>TP1</a>
+                            <li class='Sous-Menu-S1-1'><a href='..\SQL\index.php#TD1'>TD1</a>
                                 <ul class='Sous-Menu-S1-B'>
-                                    <li><a href=' '>Exercice 1</a></li>
-                                    <li><a href=' '>Exercice 2</a></li>
-                                    <li><a href=' '>Exercice 3</a></li>
+                                    <li><a href='..\SQL\TD_1_Exo_1.php'>Exercice 1</a></li>
+                                    <li><a href='..\SQL\TD_1_Exo_2.php'>Exercice 2</a></li>
+                                    <li><a href='..\SQL\TD_1_Exo_3.php'>Exercice 3</a></li>
                                 </ul>
                             </li>
-                            <li class='Sous-Menu-S1-1'><a href='..\SQL\index.php#TP2'>TP2</a>
+                            <li class='Sous-Menu-S1-1'><a href='..\SQL\index.php#TD2'>TD2</a>
                                 <ul class='Sous-Menu-S1-B'>
-                                    <li><a href=' '>Exercice 1</a></li>
-                                    <li><a href=' '>Exercice 2</a></li>
-                                    <li><a href=' '>Exercice 3</a></li>
+                                    <li><a href='..\SQL\TD_2_Exo_1.php'>Exercice 1</a></li>
+                                    <li><a href='..\SQL\TD_2_Exo_2.php'>Exercice 2</a></li>
+                                    <li><a href='..\SQL\TD_2_Exo_3.php'>Exercice 3</a></li>
                                 </ul>
                             </li>
-                            <li class='Sous-Menu-S1-1'><a href='..\SQL\index.php#TP3'>TP3</a>
+                            <li class='Sous-Menu-S1-1'><a href='..\SQL\index.php#TD3'>TD3</a>
                                 <ul class='Sous-Menu-S1-B'>
-                                    <li><a href=' '>Exercice 1</a></li>
-                                    <li><a href=' '>Exercice 2</a></li>
-                                    <li><a href=' '>Exercice 3</a></li>
+                                    <li><a href='..\SQL\TD_3_Exo_1.php'>Exercice 1</a></li>
+                                    <li><a href='..\SQL\TD_3_Exo_2.php'>Exercice 2</a></li>
+                                    <li><a href='..\SQL\TD_3_Exo_3.php'>Exercice 3</a></li>
                                 </ul>
                             </li>
                         </ul>
