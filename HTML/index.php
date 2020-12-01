@@ -13,6 +13,6 @@
 
         <p class="marge-p-index">Lien vers : <a href="ExoCSS_1.html" rel="stylesheet">Exo_1</a>.</p>
         <p class="marge-p-index">Lien vers : <a href="ExoCSS_2.css" rel="stylesheet">Exo_2</a>.</p>
-        <p class="marge-p-index">Lien vers : <a href="formulaire.html" rel="stylesheet">Formulaire</a>.</p>
+        <p class="marge-p-index">Lien vers : <a href="Formulaire.html" rel="stylesheet">Formulaire</a>.</p>
     </body>
 </html>
