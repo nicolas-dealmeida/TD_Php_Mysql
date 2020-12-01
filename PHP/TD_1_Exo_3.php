@@ -1,7 +1,7 @@
 <!-- Déclaration des Variables PHP -->
 
 <?php
-$EXO = 'Exo2';
+$EXO = 'Exo3';
 
 ?>
 
@@ -11,7 +11,7 @@ $EXO = 'Exo2';
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel='stylesheet' type='text/css' media='screen' href='global.css'> <!-- Assignement du CSS -->
-        <meta name="description" content="Site concernant <?php echo $EXO?>." <!-- Description pour SEO -->
+        <meta name="description" content="Site concernant <?php echo $EXO?> "> <!-- Description pour SEO -->
         <link rel="shortcut icon" href="img/Avatar.png"> <!-- Icone de page -->
         <title>Nicolas - PHP - <?php echo $EXO?></title> <!-- Titre Page -->
     </head>
@@ -33,38 +33,27 @@ $EXO = 'Exo2';
             <h1 class="TC"><?php echo "$EXO" ?></h1>
         </div>
         <div class="Div1">
+
+            <?php // Initialisation des valeurs
+            $Tab = array("Nom","Prenom","MDP");
+            $Tab[1] = array("Nom" => "Nom1", "Prenom" => "Prenom1", "MDP" => "MotsDePasse1");
+            $Tab[2] = array("Nom" => "Nom2", "Prenom" => "Prenom2", "MDP" => "MotsDePasse2");
+            $Tab[3] = array("Nom" => "Nom3", "Prenom" => "Prenom3", "MDP" => "MotsDePasse3"); 
+            $Tab[4] = array("Nom" => "Nom4", "Prenom" => "Prenom4", "MDP" => "MotsDePasse4"); 
+            $Tab[5] = array("Nom" => "Nom5", "Prenom" => "Prenom5", "MDP" => "MotsDePasse5"); 
+            $Tab[6] = array("Nom" => "Nom6", "Prenom" => "Prenom6", "MDP" => "MotsDePasse6"); 
+            ?>
+
             <table border="1">
-                <tr>
                     <?php
-                    $Tableau = array(1,2,3,4,5);
-
-                    for($i=0;$i<5;$i++){
-                    echo "<td>".$Tableau[$i]."</td>";}
+                    for($i=1;$i<7;$i++){
+                    echo "<tr><td>".$Tab[$i]["Nom"]. "|" .$Tab[$i]["Prenom"]. "|" .$Tab[$i]["MDP"]."</td></tr>";}
                     ?>
-                </tr>
             </table>
-        </div>
-        <div class="Div1">
-        <?php
-
-            $Tableau["Nom"] = 'Name';
-            $Tableau["Prenom"] = 'Prénom';
-            $Tableau["MDP"] = 'Mots de Passe';
-            
-            echo "<p>" .$Tableau["Nom"]. "</p>";
-            echo "<p>" .$Tableau["Prenom"]. "</p>";
-            echo "<p>" .$Tableau["MDP"]. "</p>"
-
-        ?>
         </div>
     </body>
 
-    <footer>
-        <div class="Div1">
-            <?php 
-            echo "Code Source du site :";
-
-            highlight_file(__FILE__)?>
-        </div>
-    </footer>
+        <?php
+            Highlight($FILE_LOCAL)
+        ?>
 </html>

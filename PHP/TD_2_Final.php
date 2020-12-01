@@ -1,7 +1,7 @@
 <!-- Déclaration des Variables PHP -->
 
 <?php
-$EXO = 'TP2 - Exo 3';
+$EXO = 'Exo Final 2';
 
 ?>
 
@@ -27,31 +27,37 @@ $EXO = 'TP2 - Exo 3';
     </header>
     <!-- Fin Header / Menu -->
 
-            <?php include('Function.php') ?> <!-- Include des fonctions -->
+        <?php include('Function.php') ?> <!-- Include des fonctions -->
 
     <!-- body -->
     <body>
         <div>
             <h1 class="TC"><?php echo "$EXO" ?></h1>
         </div>
-        <div class="Div1">
+
+        <div class="Div1"> <!-- Formulaire -->
+
+            <!-- PHP -->
             <?php
-                    $VA1 = '15'; // Définition de Variable
-                    $VA2 = '30'; // Définition de Variable
-                    $VA3 = '45'; // Définition de Variable
-                    $MOYENNE = Moyenne($VA1,$VA2,$VA3); // Définition de $MOYENNE via ma Fonction Moyenne.
-                    TABLEAU3($VA1,$VA2,$VA3,$MOYENNE); // Invocation du Tableau 3.
+                if (isset($_POST['MDP'])) {
+                }
+                else {
+                    $_POST['MDP'] = '-!-NEUTRE-!-' ;
+                }
+                FORMFINAL($_POST['MDP'],1234);
             ?>
         </div>
+
+        <!-- Divers pour les Test -->
+        <div class="Div1">
+            <form class="" action="" method="POST">
+                <button id="Refresh" onclick="window.location.reload(false)">Cliquez ici pour Rafraichir la page.</button>
+            </form>
+        </div>
+
     </body>
 
-
-    <footer>
-        <div class="Div1">
-            <?php 
-            echo "Code Source du site : <p></p>";
-
-            highlight_file(__FILE__)?>
-        </div>
-    </footer>
+        <?php
+            Highlight($FILE_LOCAL)
+        ?>
 </html>

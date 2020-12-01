@@ -71,12 +71,7 @@ $EXO = 'Exo Final 1';
         </div>
     </body>
 
-    <footer>
-        <div class="Div1">
-            <?php 
-            echo "Code Source du site : <p></p>";
-
-            highlight_file(__FILE__)?>
-        </div>
-    </footer>
+        <?php
+            Highlight($FILE_LOCAL)
+        ?>
 </html>

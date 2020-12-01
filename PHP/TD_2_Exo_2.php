@@ -1,7 +1,7 @@
 <!-- Déclaration des Variables PHP -->
 
 <?php
-$EXO = 'TP2 - Exo 1';
+$EXO = 'TP2 - Exo 2';
 
 ?>
 
@@ -38,23 +38,16 @@ $EXO = 'TP2 - Exo 1';
         </div>
         <div class="Div1">
             <?php
-                TABLEAU1(); // Invocation du Tableau 1.
+                $Entete1 = 'Para1'; // Définition de Variable
+                $Entete2 = 'Para2'; // Définition de Variable
+                $Entete3 = 'Para3'; // Définition de Variable
+                TABLEAU2($Entete1,$Entete2,$Entete3); // Invocation du Tableau 2.
             ?>
         </div>
     </body>
 
 
-    <footer>
-        <div class="Div1">
-            <?php 
-            echo "Code Source du site : <p></p>";
-
-            highlight_file(__FILE__)?>
-        </div>
-    </footer>
-    <div class="Div1">
-            <?php
-                TABLEAU1(); // Invocation du Tableau 1.
-            ?>
-    </div>
+        <?php
+            Highlight($FILE_LOCAL)
+        ?>
 </html>

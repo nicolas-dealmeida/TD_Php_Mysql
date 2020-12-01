@@ -1,7 +1,7 @@
 <!-- Déclaration des Variables PHP -->
 
 <?php
-$EXO = 'Exo Final 2';
+$EXO = 'Exo5';
 
 ?>
 
@@ -27,42 +27,27 @@ $EXO = 'Exo Final 2';
     </header>
     <!-- Fin Header / Menu -->
 
-        <?php include('Function.php') ?> <!-- Include des fonctions -->
-
     <!-- body -->
     <body>
         <div>
             <h1 class="TC"><?php echo "$EXO" ?></h1>
         </div>
-
-        <div class="Div1"> <!-- Formulaire -->
-
-            <!-- PHP -->
-            <?php
-                if (isset($_POST['MDP'])) {
-                }
-                else {
-                    $_POST['MDP'] = '-!-NEUTRE-!-' ;
-                }
-                FORMFINAL($_POST['MDP'],1234);
-            ?>
-        </div>
-
-        <!-- Divers pour les Test -->
         <div class="Div1">
-            <form class="" action="" method="POST">
-                <button id="Refresh" onclick="window.location.reload(false)">Cliquez ici pour Rafraichir la page.</button>
+            <form class="Rouge" action="" method="POST">
+                Texte : <input type="text" name="Texte">
+                <input type="submit">
             </form>
+                <?php
+                    if(isset($_POST['Texte'])){
+                        $Texte = $_POST['Texte'];
+                        echo '</div><div class="Div1"><p>Le texte écrit est : <span class=Rouge>'.$Texte.'</span></p>';
+                    }
+                ?>
         </div>
 
     </body>
 
-    <footer>
-        <div class="Div1">
-            <?php 
-            echo "Code Source du site : <p></p>";
-
-            highlight_file(__FILE__)?>
-        </div>
-    </footer>
+        <?php
+            Highlight($FILE_LOCAL)
+        ?>
 </html>
