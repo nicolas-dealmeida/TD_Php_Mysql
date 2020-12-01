@@ -46,15 +46,9 @@
             <p class='Violet'>Test PHP PDO : <a href='TestPDO.php'>Lien</a></p>
         </div>
 
-    </body>
+        </body>
 
-    <footer>
-        <div class="Div1">
-            <?php 
-            echo "Code Source du site :";
-
-            highlight_file(__FILE__)
-            ?>
-        </div>
-    </footer>
+        <?php
+            Highlight($FILE_LOCAL)
+        ?>
 </html>
