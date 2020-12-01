@@ -174,7 +174,7 @@ Function Menu() // Fonction affichant le menu.
         <div class='Menu-Nav'>
             <nav>
 				<ul class='Menu'>
-				<li class='Sous-Menu-1'><a href='Accueil.php'>Accueil</a></li>
+				<li class='Sous-Menu-1'><a href='..\Config\Accueil.php'>Accueil</a></li>
                     <li class='Sous-Menu-1'><a href='..\HTML\index.php'>HTML/CSS</a>
                         <ul class='Sous-Menu-S1'>
                             <li class='Sous-Menu-S1-1'><a href='..\HTML\index.php#HTML'>HTML</a>
