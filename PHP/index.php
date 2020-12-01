@@ -21,18 +21,18 @@
         <div class="Div1">
             <?php
                 for($n=1;$n<9;$n++){
-                    echo "<p class='Vert'>TP1 Exo $n : <a href='Exo$n.php'>Lien</a></p>";
+                    echo "<p class='Vert'>TP1 Exo $n : <a href='TD_1_Exo_$n.php'>Lien</a></p>";
                 }
             ?>
-            <p class='Vert'>TP1 Final : <a href='Final1.php'>Lien</a></p>
+            <p class='Vert'>TP1 Final : <a href='TD_1_Final.php'>Lien</a></p>
         </div>
         <div class="Div1">
             <?php
                 for($n=1;$n<4;$n++){
-                    echo "<p class='Bleu'>TP2 Exo $n : <a href='TP-2-Exo$n.php'>Lien</a></p>";
+                    echo "<p class='Bleu'>TP2 Exo $n : <a href='TD_2_Exo_$n.php'>Lien</a></p>";
                 }
             ?>
-            <p class='Bleu'>TP2 Final : <a href='Final2.php'>Lien</a></p>
+            <p class='Bleu'>TP2 Final : <a href='TD_2_Final.php'>Lien</a></p>
         </div>
 
         <div class="Div1">
