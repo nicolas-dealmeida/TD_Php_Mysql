@@ -58,12 +58,16 @@ $File_Name = basename(__FILE__, ".php") ; // Définition du Nom de la page.
 							<li class='Sous-Menu-2'><a href='#'>TP1</a>
 								<ul class='Sous-Menu-2a'>
 									<li><a href='###'>###</a></li>
+									<li><a href='###'>###</a></li>
+									<li><a href='###'>###</a></li>
 								</ul>
 							</li>
 						</ul>
 						<ul class='Sous-Menu-1c'>
 							<li class='Sous-Menu-2'><a href='#'>TP2</a>
 								<ul class='Sous-Menu-2b'>
+									<li><a href='###'>###</a></li>
+									<li><a href='###'>###</a></li>
 									<li><a href='###'>###</a></li>
 								</ul>
 							</li>
@@ -75,6 +79,8 @@ $File_Name = basename(__FILE__, ".php") ; // Définition du Nom de la page.
 							<li class='Sous-Menu-2'><a href='#'>TP1</a>
 								<ul class='Sous-Menu-2c'>
 									<li><a href='###'>###</a></li>
+									<li><a href='###'>###</a></li>
+									<li><a href='###'>###</a></li>
 								</ul>
 							</li>
 						</ul>
@@ -82,12 +88,16 @@ $File_Name = basename(__FILE__, ".php") ; // Définition du Nom de la page.
 							<li class='Sous-Menu-2'><a href='#'>TP2</a>
 								<ul class='Sous-Menu-2d'>
 									<li><a href='###'>###</a></li>
+									<li><a href='###'>###</a></li>
+									<li><a href='###'>###</a></li>
 								</ul>
 							</li>
 						</ul>
 						<ul class='Sous-Menu-1f'>
 							<li class='Sous-Menu-2'><a href='#'>TP3</a>
 								<ul class='Sous-Menu-2e'>
+									<li><a href='###'>###</a></li>
+									<li><a href='###'>###</a></li>
 									<li><a href='###'>###</a></li>
 								</ul>
 							</li>

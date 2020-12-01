@@ -91,6 +91,18 @@ background-color: blue;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 .Menu-Nav ul { /* S'applique sur la liste */
     margin: 0px;
     padding: 0px;
@@ -105,7 +117,7 @@ background-color: blue;
     padding-right: 10px;
     
     display: block;
-    text-align:center;
+    text-align: left;
     text-decoration: none;
     color: #EEEEEE;
     font-size: 22px;
@@ -126,10 +138,7 @@ background-color: blue;
     /*			ATTENTION : SOUS-MENU			*/
 
 
-.Sous-Menu-1 { 
-    position: relative;
-}
-.Sous-Menu-2 { 
+.Sous-Menu-1, .Sous-Menu-2 { 
     position: relative;
 }
 
@@ -267,45 +276,8 @@ background-color: blue;
     position: absolute;
 }
 
-.Sous-Menu-1a.is-active { /* Active le sous menu lors du survole*/
+.Sous-Menu-1a.is-active, .Sous-Menu-1b.is-active, .Sous-Menu-1c.is-active, .Sous-Menu-1d.is-active, .Sous-Menu-1e.is-active, .Sous-Menu-1f.is-active, .Sous-Menu-2a.is-active, .Sous-Menu-2b.is-active, .Sous-Menu-2c.is-active, .Sous-Menu-2d.is-active, .Sous-Menu-2e.is-active { /* Active Ssous Menu lors du survole*/
     display: flex;
-}
-.Sous-Menu-1b.is-active { /* Active le sous menu lors du survole */
-    display: flex;
-}
-.Sous-Menu-1c.is-active { /* Active le sous menu lors du survole */
-    display: flex;
-}
-.Sous-Menu-1d.is-active { /* Active le sous menu lors du survole */
-    display: flex;
-}
-.Sous-Menu-1e.is-active { /* Active le sous menu lors du survole */
-    display: flex;
-}
-.Sous-Menu-1f.is-active { /* Active le sous menu lors du survole */
-    display: flex;
-}
-.Sous-Menu-2a.is-active { /* Active le sous menu lors du survole */
-    display: flex;
-}
-.Sous-Menu-2b.is-active { /* Active le sous menu lors du survole */
-    display: flex;
-}
-.Sous-Menu-2c.is-active { /* Active le sous menu lors du survole */
-    display: flex;
-}
-.Sous-Menu-2d.is-active { /* Active le sous menu lors du survole */
-    display: flex;
-}
-.Sous-Menu-2e.is-active { /* Active le sous menu lors du survole */
-    display: flex;
-}
-
-.Sous-Menu-1a a, .Sous-Menu-1b a, .Sous-Menu-1c a, .Sous-Menu-1d a, .Sous-Menu-1e, .Sous-Menu-1f {
-    text-align: left;
-}
-.Sous-Menu-2a a, .Sous-Menu-2b a, .Sous-Menu-2c a, .Sous-Menu-2d a, .Sous-Menu-2e {
-    text-align: left;
 }
 
 
@@ -351,6 +323,14 @@ background-color: blue;
         display: none;
     }
 }
+
+
+
+
+
+
+
+
 
 
 
