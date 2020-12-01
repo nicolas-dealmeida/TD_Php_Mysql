@@ -7,7 +7,7 @@ $EXO = 'Exo 2';
 <!DOCTYPE html>
 <html lang="fr"> <!-- Langue FR -->
 <?php
-	include "../Function-Web.php" ; // Include des fonctions
+	include "../Config/Function-Web.php" ; // Include des fonctions
 	$FILE_LOCAL = basename(__FILE__) ; // Définition d'une variable ayant le nom de la page.
 	$File_Name = basename(__FILE__, ".php") ; // Définition du Nom de la page.
 

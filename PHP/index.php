@@ -1,27 +1,20 @@
+<?php
+	include "../Config/Function-Web.php" ; // Include des fonctions.  /!\ (Attention à ce que ce soit valide, unique variable à définir et à modifier.) /!\
+	$FILE_LOCAL = basename(__FILE__) ; // Définition d'une variable ayant le nom de la page.
+	$File_Name = basename(__FILE__, ".php") ; // Définition du Nom de la page.
+?>
 <!DOCTYPE html>
 <html lang="fr"> <!-- Langue FR -->
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel='stylesheet' type='text/css' media='screen' href='global.css'> <!-- Assignement du CSS -->
-        <meta name="description" content="Site concernant le PHP."> <!-- Description pour SEO -->
-        <link rel="shortcut icon" href="img/Avatar.png"> <!-- Icone de page -->
-        <title>Nicolas - PHP - Accueil</title> <!-- Titre Page -->
-    </head>
-    <!-- Début Header / Menu -->
-    <header>
-        <div class="Menu-Nav">
-            <nav>
-                <ul class="Menu">
-                    <li class="Logo"><img src="img/Avatar.png" alt="Logo"></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <!-- Fin Header / Menu -->
+    <?php
+        head($FILE_LOCAL) ;
+    ?>
+    <body>
+    <?php
+        menu() ;
+    ?>
+
 
     <!-- body -->
-    <body>
         <div>
             <h1 class="TC">Accueil</h1>
         </div>
