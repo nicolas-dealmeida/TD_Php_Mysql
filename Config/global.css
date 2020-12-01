@@ -15,13 +15,13 @@ font-size: 100%;
 .Div1 {
 background-color: #dadce4;
 
-margin-top: 5px;
-margin-bottom: 5px;
+margin-top: 15px;
+margin-bottom: 15px;
 margin-left: 5px;
 margin-right: 5px;
 
-padding-top: 0.25%;
-padding-bottom: 0.25%;
+padding-top: 0.5%;
+padding-bottom: 0.5%;
 padding-left: 1%;
 padding-right: 1%;
 
@@ -111,11 +111,17 @@ color: blueviolet;
 /*          CSS PLACEMENTS            */
 
 .TC { /*CSS Texte Centré */
-text-align: center;
+    text-align: center;
 }
 .TG { /*CSS texte à Gauche */
-text-align: left;
+    text-align: left;
 }
 .TD { /*CSS texte à Droite */
-text-align: right;
+    text-align: right;
+}
+.TITRE { /*CSS texte à Droite */
+    text-align: center;
+
+    margin-top: 1%;
+    margin-bottom: 1%;
 }

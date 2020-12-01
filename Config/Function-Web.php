@@ -18,7 +18,7 @@
 Function Head($FILE_LOCAL) // Fonction pour le Head et les metas de page.
 {
 	$File_Format = "UTF-8" ; // Définition du Format d'encodage.
-	$File_CSS = "../global.css" ; // Définition du Fichier CSS correspondant.
+	$File_CSS = "../Config/global.css" ; // Définition du Fichier CSS correspondant.
 	$File_Name = basename($FILE_LOCAL, ".php") ; // Définition du Nom de la page.
 	$File_Description = "Exercices de Nicolas - $File_Name" ; // Définition de la Description de la page.
 	$File_Icon = "../Icon.png" ; // Définition de l'Icon de page.
@@ -136,7 +136,7 @@ Function Menu() // Fonction affichant le menu.
 				min-width: 135px;
 				position: absolute;
 				top: -3px;
-				left: 138px;
+				left: 128px;
 				border-style: groove;
 				border-color: white;
 			}
@@ -146,7 +146,7 @@ Function Menu() // Fonction affichant le menu.
 				min-width: 135px;
 				position: absolute;
 				top: -3px;
-				left: 60px;
+				left: 57px;
 				border-style: groove;
 				border-color: white;
 			}
@@ -176,39 +176,39 @@ Function Menu() // Fonction affichant le menu.
                 <ul class='Menu'>
                     <li class='Sous-Menu-1'><a href=' '>HTML/CSS</a>
                         <ul class='Sous-Menu-S1'>
-                            <li class='Sous-Menu-S1-1'><a href=' '>HTML</a>
+                            <li class='Sous-Menu-S1-1'><a href='..\HTML\index.php#HTML'>HTML</a>
                                 <ul class='Sous-Menu-S1-A'>
                                     <li><a href='..\HTML\Exo1.php'>Exercice 1</a></li>
                                     <li><a href='..\HTML\Exo2.php'>Exercice 2</a></li>
                                     <li><a href='..\HTML\Exo3.php'>Exercice 3</a></li>
                                 </ul>
                             </li>
-                            <li class='Sous-Menu-S1-1'><a href=' '>CSS</a>
+                            <li class='Sous-Menu-S1-1'><a href='..\HTML\index.php#CSS'>CSS</a>
                                 <ul class='Sous-Menu-S1-A'>
                                     <li><a href='..\HTML\ExoCSS_1.php'>Exercice 1</a></li>
                                     <li><a href='..\HTML\ExoCSS_2.php'>Exercice 2</a></li>
                                 </ul>
                             </li>
-                            <li><a href=' '>Formulaire</a></li>
+                            <li><a href='..\HTML\Formulaire.php'>Formulaire</a></li>
                         </ul>
                     </li>
-                    <li class='Sous-Menu-1'><a href=' '>PHP</a>
+                    <li class='Sous-Menu-1'><a href='..\PHP\index.php'>PHP</a>
                         <ul class='Sous-Menu-S1'>
-                            <li class='Sous-Menu-S1-1'><a href=' '>TP1</a>
+                            <li class='Sous-Menu-S1-1'><a href='..\PHP\index.php#TP1'>TP1</a>
                                 <ul class='Sous-Menu-S1-B'>
                                     <li><a href=' '>Exercice 1</a></li>
                                     <li><a href=' '>Exercice 2</a></li>
                                     <li><a href=' '>Exercice 3</a></li>
                                 </ul>
                             </li>
-                            <li class='Sous-Menu-S1-1'><a href=' '>TP2</a>
+                            <li class='Sous-Menu-S1-1'><a href='..\PHP\index.php#TP2'>TP2</a>
                                 <ul class='Sous-Menu-S1-B'>
                                     <li><a href=' '>Exercice 1</a></li>
                                     <li><a href=' '>Exercice 2</a></li>
                                     <li><a href=' '>Exercice 3</a></li>
                                 </ul>
                             </li>
-                            <li class='Sous-Menu-S1-1'><a href=' '>TP3</a>
+                            <li class='Sous-Menu-S1-1'><a href='..\PHP\index.php#TP3'>TP3</a>
                                 <ul class='Sous-Menu-S1-B'>
                                     <li><a href=' '>Exercice 1</a></li>
                                     <li><a href=' '>Exercice 2</a></li>
@@ -217,23 +217,23 @@ Function Menu() // Fonction affichant le menu.
                             </li>
                         </ul>
                     </li>
-                    <li class='Sous-Menu-1'><a href=' '>SQL</a>
+                    <li class='Sous-Menu-1'><a href='..\SQL\index.php'>SQL</a>
                         <ul class='Sous-Menu-S1'>
-                            <li class='Sous-Menu-S1-1'><a href=' '>TP1</a>
+                            <li class='Sous-Menu-S1-1'><a href='..\SQL\index.php#TP1'>TP1</a>
                                 <ul class='Sous-Menu-S1-B'>
                                     <li><a href=' '>Exercice 1</a></li>
                                     <li><a href=' '>Exercice 2</a></li>
                                     <li><a href=' '>Exercice 3</a></li>
                                 </ul>
                             </li>
-                            <li class='Sous-Menu-S1-1'><a href=' '>TP2</a>
+                            <li class='Sous-Menu-S1-1'><a href='..\SQL\index.php#TP2'>TP2</a>
                                 <ul class='Sous-Menu-S1-B'>
                                     <li><a href=' '>Exercice 1</a></li>
                                     <li><a href=' '>Exercice 2</a></li>
                                     <li><a href=' '>Exercice 3</a></li>
                                 </ul>
                             </li>
-                            <li class='Sous-Menu-S1-1'><a href=' '>TP3</a>
+                            <li class='Sous-Menu-S1-1'><a href='..\SQL\index.php#TP3'>TP3</a>
                                 <ul class='Sous-Menu-S1-B'>
                                     <li><a href=' '>Exercice 1</a></li>
                                     <li><a href=' '>Exercice 2</a></li>
