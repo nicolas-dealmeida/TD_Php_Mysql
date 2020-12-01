@@ -31,23 +31,30 @@ border-style: double ;
 
 /*          CSS TITRES et TEXTES            */
 
+h1,h2,h3,h4,h5,h6 { /* Formatage du Padding et Marge pour les Titres */
+    padding-top: 0%;
+    padding-bottom: 0%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
 h1 { /* Titre 1 */
-font-size: 2;
+    font-size: xx-large;
 }
 h2 { /* Titre 2 */
-font-size: 3;
+    font-size: x-large;
 }
 h3 { /* Titre 3 */
-font-size: 4;
+    font-size: large;
 }
 h4 { /* Titre 4 */
-font-size: 5;
+    font-size: medium;
 }
 h5 { /* Titre 5 */
-font-size: 6;
+    font-size: small;
 }
 h6 { /* Titre 6 */
-font-size: 7;
+    font-size: x-small;
 }
 
 p { /* Paragraphe */
@@ -71,7 +78,18 @@ background-color: blue;
 }
 
 
-/*          CSS MENU            */
+/*          CSS Menu            */
+
+
+
+
+
+
+
+
+
+
+
 
 .Menu-Nav ul { /* S'applique sur la liste */
     margin: 0px;
@@ -105,54 +123,194 @@ background-color: blue;
 }
 
 
-                                    /* ATTENTION : SOUS-MENU */
+    /*			ATTENTION : SOUS-MENU			*/
+
 
 .Sous-Menu-1 { 
     position: relative;
 }
-
-.Sous-Menu-1:hover > .Sous-Menu-2a { /* Active le sous menu lors du survole*/
-    display: flex;
-}
-.Sous-Menu-1:hover > .Sous-Menu-2b { /* Active le sous menu lors du survole*/
-    display: flex;
-}
-.Sous-Menu-1:active > .Sous-Menu-2a { /* Active le sous menu lors du survole*/
-    display: flex;
-}
-.Sous-Menu-1:active > .Sous-Menu-2b { /* Active le sous menu lors du survole*/
-    display: flex;
+.Sous-Menu-2 { 
+    position: relative;
 }
 
-.Sous-Menu-2a { /* Sous Menu Pies */
+.Sous-Menu-1:hover > .Sous-Menu-1a { /* Active le sous menu lors du survole*/
+    display: flex;
+}
+.Sous-Menu-1:active > .Sous-Menu-1a { /* Active le sous menu lors du survole*/
+    display: flex;
+}
+.Sous-Menu-1:hover > .Sous-Menu-1b { /* Active le sous menu lors du survole*/
+    display: flex;
+}
+.Sous-Menu-1:active > .Sous-Menu-1b { /* Active le sous menu lors du survole*/
+    display: flex;
+}
+.Sous-Menu-1:hover > .Sous-Menu-1c { /* Active le sous menu lors du survole*/
+    display: flex;
+}
+.Sous-Menu-1:active > .Sous-Menu-1c { /* Active le sous menu lors du survole*/
+    display: flex;
+}
+.Sous-Menu-1:hover > .Sous-Menu-1d { /* Active le sous menu lors du survole*/
+    display: flex;
+}
+.Sous-Menu-1:active > .Sous-Menu-1d { /* Active le sous menu lors du survole*/
+    display: flex;
+}
+.Sous-Menu-1:hover > .Sous-Menu-1e { /* Active le sous menu lors du survole*/
+    display: flex;
+}
+.Sous-Menu-1:active > .Sous-Menu-1e { /* Active le sous menu lors du survole*/
+    display: flex;
+}
+.Sous-Menu-1:hover > .Sous-Menu-1f { /* Active le sous menu lors du survole*/
+    display: flex;
+}
+.Sous-Menu-1:active > .Sous-Menu-1f { /* Active le sous menu lors du survole*/
+    display: flex;
+}
+.Sous-Menu-2:hover > .Sous-Menu-2a { /* Active le sous menu lors du survole*/
+    display: flex;
+}
+.Sous-Menu-2:active > .Sous-Menu-2a { /* Active le sous menu lors du survole*/
+    display: flex;
+}
+.Sous-Menu-2:hover > .Sous-Menu-2b { /* Active le sous menu lors du survole*/
+    display: flex;
+}
+.Sous-Menu-2:active > .Sous-Menu-2b { /* Active le sous menu lors du survole*/
+    display: flex;
+}
+.Sous-Menu-2:hover > .Sous-Menu-2c { /* Active le sous menu lors du survole*/
+    display: flex;
+}
+.Sous-Menu-2:active > .Sous-Menu-2c { /* Active le sous menu lors du survole*/
+    display: flex;
+}
+.Sous-Menu-2:hover > .Sous-Menu-2d { /* Active le sous menu lors du survole*/
+    display: flex;
+}
+.Sous-Menu-2:active > .Sous-Menu-2d { /* Active le sous menu lors du survole*/
+    display: flex;
+}
+.Sous-Menu-2:hover > .Sous-Menu-2e { /* Active le sous menu lors du survole*/
+    display: flex;
+}
+.Sous-Menu-2:active > .Sous-Menu-2e { /* Active le sous menu lors du survole*/
+    display: flex;
+}
+
+.Sous-Menu-1a { /* Sous Menu HTML */
     display: none ; 
     flex-flow: column wrap;
     min-width: 205px;
     position: absolute;
 }
-.Sous-Menu-2b { /* Sous Menu CV */
+.Sous-Menu-1b { /* Sous Menu PHP1 */
+    display: none ; 
+    flex-flow: column wrap;
+    min-width: 205px;
+    position: absolute;
+}
+.Sous-Menu-1c { /* Sous Menu PHP2 */
+    display: none ; 
+    flex-flow: column wrap;
+    min-width: 205px;
+    position: absolute;
+}
+.Sous-Menu-1d { /* Sous Menu SQL1 */
+    display: none ; 
+    flex-flow: column wrap;
+    min-width: 205px;
+    position: absolute;
+}
+.Sous-Menu-1e { /* Sous Menu SQL2 */
+    display: none ; 
+    flex-flow: column wrap;
+    min-width: 205px;
+    position: absolute;
+}
+.Sous-Menu-1f { /* Sous Menu SQL3 */
+    display: none ; 
+    flex-flow: column wrap;
+    min-width: 205px;
+    position: absolute;
+}
+.Sous-Menu-2a { /* Sous Menu PHP TP1 */
+    display: none ; 
+    flex-flow: column wrap;
+    min-width: 205px;
+    position: absolute;
+}
+.Sous-Menu-2b { /* Sous Menu PHP TP2 */
+    display: none ; 
+    flex-flow: column wrap;
+    min-width: 205px;
+    position: absolute;
+}
+.Sous-Menu-2c { /* Sous Menu SQL 1 */
+    display: none ; 
+    flex-flow: column wrap;
+    min-width: 205px;
+    position: absolute;
+}
+.Sous-Menu-2d { /* Sous Menu SQL 2 */
+    display: none ; 
+    flex-flow: column wrap;
+    min-width: 205px;
+    position: absolute;
+}
+.Sous-Menu-2e { /* Sous Menu SQL 3 */
     display: none ; 
     flex-flow: column wrap;
     min-width: 205px;
     position: absolute;
 }
 
-.Sous-Menu-2a.is-active { /* Active le sous menu lors du survole*/
+.Sous-Menu-1a.is-active { /* Active le sous menu lors du survole*/
+    display: flex;
+}
+.Sous-Menu-1b.is-active { /* Active le sous menu lors du survole */
+    display: flex;
+}
+.Sous-Menu-1c.is-active { /* Active le sous menu lors du survole */
+    display: flex;
+}
+.Sous-Menu-1d.is-active { /* Active le sous menu lors du survole */
+    display: flex;
+}
+.Sous-Menu-1e.is-active { /* Active le sous menu lors du survole */
+    display: flex;
+}
+.Sous-Menu-1f.is-active { /* Active le sous menu lors du survole */
+    display: flex;
+}
+.Sous-Menu-2a.is-active { /* Active le sous menu lors du survole */
     display: flex;
 }
 .Sous-Menu-2b.is-active { /* Active le sous menu lors du survole */
     display: flex;
 }
+.Sous-Menu-2c.is-active { /* Active le sous menu lors du survole */
+    display: flex;
+}
+.Sous-Menu-2d.is-active { /* Active le sous menu lors du survole */
+    display: flex;
+}
+.Sous-Menu-2e.is-active { /* Active le sous menu lors du survole */
+    display: flex;
+}
 
-.Sous-Menu-2a a {
+.Sous-Menu-1a a, .Sous-Menu-1b a, .Sous-Menu-1c a, .Sous-Menu-1d a, .Sous-Menu-1e, .Sous-Menu-1f {
     text-align: left;
 }
-.Sous-Menu-2b a {
+.Sous-Menu-2a a, .Sous-Menu-2b a, .Sous-Menu-2c a, .Sous-Menu-2d a, .Sous-Menu-2e {
     text-align: left;
 }
 
 
-/*          CSS MEDIA            */
+    /*			CSS MEDIA			*/
+
 
 @media (max-width: 480px) { /* Si Ecran trop petit (Donc téléphone, etc) */
     .Menu-Nav a { /* Menu */
@@ -162,34 +320,65 @@ background-color: blue;
         padding-left: 5px;
         padding-right: 5px;
     }
-    .Sous-Menu-2b.is-active { /* Désactive le sous menu */
+    .Sous-Menu-1a.is-active { /* Désactive le sous menu */
+        display: none;
+    }
+    .Sous-Menu-1b.is-active { /* Désactive le sous menu */
+        display: none;
+    }
+    .Sous-Menu-1c.is-active { /* Désactive le sous menu */
+        display: none;
+    }
+    .Sous-Menu-1d.is-active { /* Désactive le sous menu */
+        display: none;
+    }
+    .Sous-Menu-1e.is-active { /* Désactive le sous menu */
         display: none;
     }
     .Sous-Menu-2a.is-active { /* Désactive le sous menu */
         display: none;
     }
-    /*.FlexR { Passage de FlexR en RW et non en R 
-        flex-flow: row wrap!important;
-    }*/
-    h1 { /* Titre 1 */
-        font-size: x-large;
+    .Sous-Menu-2b.is-active { /* Désactive le sous menu */
+        display: none;
     }
-    h2 { /* Titre 2 */
-        font-size: large;
+    .Sous-Menu-2c.is-active { /* Désactive le sous menu */
+        display: none;
     }
-    h3 { /* Titre 3 */
-        font-size: medium;
+    .Sous-Menu-2d.is-active { /* Désactive le sous menu */
+        display: none;
     }
-    h4 { /* Titre 4 */
-        font-size: small;
-    }
-    h5 { /* Titre 5 */
-        font-size: x-small;
-    }
-    h6 { /* Titre 6 */
-        font-size: xx-small;
+    .Sous-Menu-2e.is-active { /* Désactive le sous menu */
+        display: none;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  CSS du Menu dans le fichier Function-Web.php    */
+
 
 /*          CSS COULEURS            */
 
