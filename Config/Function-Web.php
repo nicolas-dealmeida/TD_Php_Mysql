@@ -243,11 +243,16 @@ Function Menu() // Fonction affichant le menu.
                             </li>
                             <li class='Sous-Menu-S1-1'><a href='..\SQL\index.php#TD3'>TD3</a>
                                 <ul class='Sous-Menu-S1-B'>
-                                    <li><a href='..\SQL\TD_3_Exo_1.php'>Exercice 1</a></li>
                                     <li><a href='..\SQL\TD_3_Exo_2.php'>Exercice 2</a></li>
                                     <li><a href='..\SQL\TD_3_Exo_3.php'>Exercice 3</a></li>
                                 </ul>
-                            </li>
+							</li>
+							<li class='Sous-Menu-S1-1'><a href='..\SQL\index.php#TD4'>TD4</a>
+								<ul class='Sous-Menu-S1-B'>
+									<li><a href='..\SQL\TD_4_Exo_2.php'>Exercice 2</a></li>
+									<li><a href='..\SQL\TD_4_Exo_3.php'>Exercice 3</a></li>
+								</ul>
+							</li>
                         </ul>
                     </li>
                 </ul>
@@ -256,7 +261,6 @@ Function Menu() // Fonction affichant le menu.
     </header>
 	" ;
 }
-
 
 
 Function Highlight($FILE_LOCAL) // Fonction affichant le highlight_file.
@@ -276,5 +280,32 @@ Function Highlight($FILE_LOCAL) // Fonction affichant le highlight_file.
 	</footer>
 	" ;
 }
+
+
+
+Function Insert_Post($Post_Insert) // Fonction affichant le highlight_file.
+{
+
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ?>
