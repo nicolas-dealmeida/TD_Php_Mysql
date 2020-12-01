@@ -55,297 +55,197 @@ Function Menu() // Fonction affichant le menu.
 	echo	//	CSS du MENU
 	"
 		<style>
-			.Menu-Nav ul { /* S'applique sur la liste */
+			/*          CSS FLEXBOX MENU         */
+
+			.Menu {
+				background: #0D1F2D;
+				box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.25);
+				font-size: 25px;
+			}
+			
+			.Menu-Nav ul { /* S'applique sur la liste du Menu */
 				margin: 0px;
 				padding: 0px;
+				list-style: none;
 				background: #0D1F2D;
-				list-style:none;
-			} 
-
+			}
+			
 			.Menu-Nav a { /* S'applique sur les liens dans le menu */
-				padding-top: 5px;
-				padding-bottom: 5px;
-				padding-left: 10px;
-				padding-right: 10px;
-				
+				padding-top: 2.0%;
+				padding-bottom: 2.0%;
+			
+				padding-left: 30px;
+				padding-right: 30px;
+			
 				display: block;
-				text-align:center;
 				text-decoration: none;
 				color: #EEEEEE;
-				font-size: 22px;
 			}
-
-			.Menu a:hover { /*CSS des liens lors du survole du curseur */
+			
+			.Menu a:hover { /* CSS des liens lors du survole du curseur */
 				text-decoration: underline white;
 			}
-
+			
 			.Menu-Nav .Menu {
 				display: flex;
-				flex-flow: row wrap;
+				flex-flow: row wrap; /* Permet que le menu se mette à la suite en retour de ligne */
 				justify-content: center;
-				box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.40);
 			}
-
-
-				/*			ATTENTION : SOUS-MENU			*/
-
-
-			.Sous-Menu-1 { 
-				position: relative;
-			}
-			.Sous-Menu-2 { 
+			
+			
+			/* ATTENTION : SOUS-MENU */
+			
+			.Sous-Menu-1, .Sous-Menu-S1-1 { /* Menu de base affiché */
 				position: relative;
 			}
 			
-			.Sous-Menu-1:hover > .Sous-Menu-1a { /* Active le sous menu lors du survole*/
+			.Sous-Menu-1:hover>.Sous-Menu-S1 { /* Menu de base affiché -> Active Sous Menu 1*/
 				display: flex;
 			}
-			.Sous-Menu-1:hover > .Sous-Menu-1b { /* Active le sous menu lors du survole*/
+			.Sous-Menu-S1-1:hover>.Sous-Menu-S1-A { /* Menu de base affiché -> Active Sous Menu 1*/
 				display: flex;
 			}
-			.Sous-Menu-1:active > .Sous-Menu-1c { /* Active le sous menu lors du survole*/
-				display: flex;
-			}
-			.Sous-Menu-1:active > .Sous-Menu-1d { /* Active le sous menu lors du survole*/
-				display: flex;
-			}
-			.Sous-Menu-1:hover > .Sous-Menu-1e { /* Active le sous menu lors du survole*/
-				display: flex;
-			}
-			.Sous-Menu-1:hover > .Sous-Menu-1f { /* Active le sous menu lors du survole*/
-				display: flex;
-			}
-			.Sous-Menu-2:active > .Sous-Menu-2a { /* Active le sous menu lors du survole*/
-				display: flex;
-			}
-			.Sous-Menu-2:hover > .Sous-Menu-2b { /* Active le sous menu lors du survole*/
-				display: flex;
-			}
-			.Sous-Menu-2:hover > .Sous-Menu-2c { /* Active le sous menu lors du survole*/
-				display: flex;
-			}
-			.Sous-Menu-2:active > .Sous-Menu-2d { /* Active le sous menu lors du survole*/
-				display: flex;
-			}
-			.Sous-Menu-2:active > .Sous-Menu-2e { /* Active le sous menu lors du survole*/
-				display: flex;
-			}
-
-
-			.Sous-Menu-1a { /* Sous Menu HTML */
-				display: none ; 
-				flex-flow: column wrap;
-				min-width: 205px;
-				position: absolute;
-			}
-			.Sous-Menu-1b { /* Sous Menu PHP1 */
-				display: none ; 
-				flex-flow: column wrap;
-				min-width: 205px;
-				position: absolute;
-			}
-			.Sous-Menu-1c { /* Sous Menu PHP2 */
-				display: none ; 
-				flex-flow: column wrap;
-				min-width: 205px;
-				position: absolute;
-			}
-			.Sous-Menu-1d { /* Sous Menu SQL1 */
-				display: none ; 
-				flex-flow: column wrap;
-				min-width: 205px;
-				position: absolute;
-			}
-			.Sous-Menu-1e { /* Sous Menu SQL2 */
-				display: none ; 
-				flex-flow: column wrap;
-				min-width: 205px;
-				position: absolute;
-			}
-			.Sous-Menu-1f { /* Sous Menu SQL3 */
-				display: none ; 
-				flex-flow: column wrap;
-				min-width: 205px;
-				position: absolute;
-			}
-			.Sous-Menu-2a { /* Sous Menu PHP TP1 */
-				display: none ; 
-				flex-flow: column wrap;
-				min-width: 205px;
-				position: absolute;
-			}
-			.Sous-Menu-2b { /* Sous Menu PHP TP2 */
-				display: none ; 
-				flex-flow: column wrap;
-				min-width: 205px;
-				position: absolute;
-			}
-			.Sous-Menu-2c { /* Sous Menu SQL 1 */
-				display: none ; 
-				flex-flow: column wrap;
-				min-width: 205px;
-				position: absolute;
-			}
-			.Sous-Menu-2d { /* Sous Menu SQL 2 */
-				display: none ; 
-				flex-flow: column wrap;
-				min-width: 205px;
-				position: absolute;
-			}
-			.Sous-Menu-2e { /* Sous Menu SQL 3 */
-				display: none ; 
-				flex-flow: column wrap;
-				min-width: 205px;
-				position: absolute;
-			}
-			
-			.Sous-Menu-1a.is-active { /* Active le sous menu lors du survole*/
-				display: flex;
-			}
-			.Sous-Menu-1b.is-active { /* Active le sous menu lors du survole */
-				display: flex;
-			}
-			.Sous-Menu-1c.is-active { /* Active le sous menu lors du survole*/
-				display: flex;
-			}
-			.Sous-Menu-1d.is-active { /* Active le sous menu lors du survole */
-				display: flex;
-			}
-			.Sous-Menu-1e.is-active { /* Active le sous menu lors du survole*/
-				display: flex;
-			}
-			.Sous-Menu-1f.is-active { /* Active le sous menu lors du survole */
-				display: flex;
-			}
-			.Sous-Menu-2a.is-active { /* Active le sous menu lors du survole*/
-				display: flex;
-			}
-			.Sous-Menu-2b.is-active { /* Active le sous menu lors du survole */
-				display: flex;
-			}
-			.Sous-Menu-2c.is-active { /* Active le sous menu lors du survole*/
-				display: flex;
-			}
-			.Sous-Menu-2d.is-active { /* Active le sous menu lors du survole */
-				display: flex;
-			}
-			.Sous-Menu-2e.is-active { /* Active le sous menu lors du survole */
+			.Sous-Menu-S1-1:hover>.Sous-Menu-S1-B { /* 1er Sous Menu A (Donc EPK/FUZ/PAL) */
 				display: flex;
 			}
 			
-			.Sous-Menu-1a a, Sous-Menu-1b a, Sous-Menu-1c a, Sous-Menu-1d a, Sous-Menu-1e, Sous-Menu-1f, {
-				text-align: left;
-			}
-			.Sous-Menu-2a a, Sous-Menu-2b a, Sous-Menu-2c a, Sous-Menu-2d a, Sous-Menu-2e {
-				text-align: left;
+			.Sous-Menu-S1 a { /* Formatage Texte sur le premier Sous-Menu, héréditaire */
+				padding-left: 10px;
+				padding-right: 10px;
+				padding-top: 5px;
+				padding-bottom: 5px;
+				justify-content: center;
 			}
 			
-
-				/*			CSS MEDIA			*/
+			.Sous-Menu-S1-B.is-active, .Sous-Menu-S1-B.is-active, .Sous-Menu-S1.is-active { /* 3ème Sous Menu A et B (Donc F/S, F/M/S et ES/F/M/S/Y) */
+				display: flex;
+			}
 			
-
-			@media (max-width: 480px) { /* Si Ecran trop petit (Donc téléphone, etc) */
-				.Menu-Nav a { /* Menu */
-					font-size: 14px;
-					padding-top: 5px;
-					padding-bottom: 5px;
+			.Sous-Menu-S1 { /* Groupe de Sous Menu : Formatage Taille, Emplacement, Bordure */
+				display: none;
+				flex-flow: column wrap;
+				position: absolute;
+				left: 28px;
+				border-style: groove;
+				border-color: white;
+				font-size: 20px;
+			}
+			.Sous-Menu-S1-A { /* 1er Sous Menu (Donc HTML/CSS) */
+				display: none;
+				flex-flow: column wrap;
+				min-width: 135px;
+				position: absolute;
+				top: -3px;
+				left: 138px;
+				border-style: groove;
+				border-color: white;
+			}
+			.Sous-Menu-S1-B { /* 2ème Sous Menu (Donc PHP/SQL) */
+				display: none;
+				flex-flow: column wrap;
+				min-width: 135px;
+				position: absolute;
+				top: -3px;
+				left: 60px;
+				border-style: groove;
+				border-color: white;
+			}
+			
+			/*          Fond Image Des Divs            */
+			
+			@media (max-width: 480px) { /* S'applique si téléphone ou petit écrans. */
+				.Menu {
+					font-size: 20px;
+				}
+				.Menu-Nav a {
+					padding-top: 1.0%;
+					padding-bottom: 1.0%;
+			
 					padding-left: 5px;
 					padding-right: 5px;
 				}
-				.Sous-Menu-1a.is-active { /* Désactive le sous menu */
-					display: none;
-				}
-				.Sous-Menu-1b.is-active { /* Désactive le sous menu */
-					display: none;
-				}
-				.Sous-Menu-1c.is-active { /* Désactive le sous menu */
-					display: none;
-				}
-				.Sous-Menu-1d.is-active { /* Désactive le sous menu */
-					display: none;
-				}
-				.Sous-Menu-1e.is-active { /* Désactive le sous menu */
-					display: none;
-				}
-				.Sous-Menu-2a.is-active { /* Désactive le sous menu */
-					display: none;
-				}
-				.Sous-Menu-2b.is-active { /* Désactive le sous menu */
-					display: none;
-				}
-				.Sous-Menu-2c.is-active { /* Désactive le sous menu */
-					display: none;
-				}
-				.Sous-Menu-2d.is-active { /* Désactive le sous menu */
-					display: none;
-				}
-				.Sous-Menu-2e.is-active { /* Désactive le sous menu */
-					display: none;
-				}
 			}
+			
 		</style>
 	" ;
 	echo
 	"
 	<header>
-		<div class='Menu-Nav'>
-			<nav>
-				<ul class='Menu'>
-				
-					<li><a href='Accueil.php'>Accueil</a></li>
-
-					<li class='Sous-Menu-1'><a href='HTML/index.php'>HTML</a>
-						<ul class='Sous-Menu-1a'>
-							<li><a href='###'>###</a></li>
-						</ul>
-					</li>
-
-					<li class='Sous-Menu-1'><a href='PHP/index.php'>PHP</a>
-						<ul class='Sous-Menu-1b'>
-							<li class='Sous-Menu-2'><a href='#'>TP1</a>
-								<ul class='Sous-Menu-2a'>
-									<li><a href='###'>###</a></li>
-								</ul>
-							</li>
-						</ul>
-						<ul class='Sous-Menu-1c'>
-							<li class='Sous-Menu-2'><a href='#'>TP2</a>
-								<ul class='Sous-Menu-2b'>
-									<li><a href='###'>###</a></li>
-								</ul>
-							</li>
-						</ul>
-					</li>
-
-					<li class='Sous-Menu-1'><a href='SQL/index.php'>SQL</a>
-						<ul class='Sous-Menu-1d'>
-							<li class='Sous-Menu-2'><a href='#'>TP1</a>
-								<ul class='Sous-Menu-2c'>
-									<li><a href='###'>###</a></li>
-								</ul>
-							</li>
-						</ul>
-						<ul class='Sous-Menu-1e'>
-							<li class='Sous-Menu-2'><a href='#'>TP2</a>
-								<ul class='Sous-Menu-2d'>
-									<li><a href='###'>###</a></li>
-								</ul>
-							</li>
-						</ul>
-						<ul class='Sous-Menu-1f'>
-							<li class='Sous-Menu-2'><a href='#'>TP3</a>
-								<ul class='Sous-Menu-2e'>
-									<li><a href='###'>###</a></li>
-								</ul>
-							</li>
-						</ul>
-					</li>
-					
-				</ul>
-
-			</nav>
-		</div>
-	</header>
+        <div class='Menu-Nav'>
+            <nav>
+                <ul class='Menu'>
+                    <li class='Sous-Menu-1'><a href=' '>HTML/CSS</a>
+                        <ul class='Sous-Menu-S1'>
+                            <li class='Sous-Menu-S1-1'><a href=' '>HTML</a>
+                                <ul class='Sous-Menu-S1-A'>
+                                    <li><a href='..\HTML\Exo1.php'>Exercice 1</a></li>
+                                    <li><a href='..\HTML\Exo2.php'>Exercice 2</a></li>
+                                    <li><a href='..\HTML\Exo3.php'>Exercice 3</a></li>
+                                </ul>
+                            </li>
+                            <li class='Sous-Menu-S1-1'><a href=' '>CSS</a>
+                                <ul class='Sous-Menu-S1-A'>
+                                    <li><a href='..\HTML\ExoCSS_1.php'>Exercice 1</a></li>
+                                    <li><a href='..\HTML\ExoCSS_2.php'>Exercice 2</a></li>
+                                </ul>
+                            </li>
+                            <li><a href=' '>Formulaire</a></li>
+                        </ul>
+                    </li>
+                    <li class='Sous-Menu-1'><a href=' '>PHP</a>
+                        <ul class='Sous-Menu-S1'>
+                            <li class='Sous-Menu-S1-1'><a href=' '>TP1</a>
+                                <ul class='Sous-Menu-S1-B'>
+                                    <li><a href=' '>Exercice 1</a></li>
+                                    <li><a href=' '>Exercice 2</a></li>
+                                    <li><a href=' '>Exercice 3</a></li>
+                                </ul>
+                            </li>
+                            <li class='Sous-Menu-S1-1'><a href=' '>TP2</a>
+                                <ul class='Sous-Menu-S1-B'>
+                                    <li><a href=' '>Exercice 1</a></li>
+                                    <li><a href=' '>Exercice 2</a></li>
+                                    <li><a href=' '>Exercice 3</a></li>
+                                </ul>
+                            </li>
+                            <li class='Sous-Menu-S1-1'><a href=' '>TP3</a>
+                                <ul class='Sous-Menu-S1-B'>
+                                    <li><a href=' '>Exercice 1</a></li>
+                                    <li><a href=' '>Exercice 2</a></li>
+                                    <li><a href=' '>Exercice 3</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class='Sous-Menu-1'><a href=' '>SQL</a>
+                        <ul class='Sous-Menu-S1'>
+                            <li class='Sous-Menu-S1-1'><a href=' '>TP1</a>
+                                <ul class='Sous-Menu-S1-B'>
+                                    <li><a href=' '>Exercice 1</a></li>
+                                    <li><a href=' '>Exercice 2</a></li>
+                                    <li><a href=' '>Exercice 3</a></li>
+                                </ul>
+                            </li>
+                            <li class='Sous-Menu-S1-1'><a href=' '>TP2</a>
+                                <ul class='Sous-Menu-S1-B'>
+                                    <li><a href=' '>Exercice 1</a></li>
+                                    <li><a href=' '>Exercice 2</a></li>
+                                    <li><a href=' '>Exercice 3</a></li>
+                                </ul>
+                            </li>
+                            <li class='Sous-Menu-S1-1'><a href=' '>TP3</a>
+                                <ul class='Sous-Menu-S1-B'>
+                                    <li><a href=' '>Exercice 1</a></li>
+                                    <li><a href=' '>Exercice 2</a></li>
+                                    <li><a href=' '>Exercice 3</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 	" ;
 }
 
