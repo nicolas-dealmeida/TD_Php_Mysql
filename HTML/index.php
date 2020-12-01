@@ -1,3 +1,8 @@
+<?php
+	include "../Config/Function-Web.php" ; // Include des fonctions.  /!\ (Attention à ce que ce soit valide, unique variable à définir et à modifier.) /!\
+	$FILE_LOCAL = basename(__FILE__) ; // Définition d'une variable ayant le nom de la page.
+	$File_Name = basename(__FILE__, ".php") ; // Définition du Nom de la page.
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -7,6 +12,9 @@
         <link rel='stylesheet' type='text/css' media='screen' href='global.css'>
     </head>
     <body class="TexteCentre">
+        <?php
+            Menu() ;
+        ?>
         <p class="marge-p-index">Lien vers : <a href="Exo1.html" rel="stylesheet">Exo1</a>.</p>
         <p class="marge-p-index">Lien vers : <a href="Exo2.html" rel="stylesheet">Exo2</a>.</p>
         <p class="marge-p-index">Lien vers : <a href="Exo3.html" rel="stylesheet">Exo3</a>.</p>
