@@ -6,28 +6,22 @@ $EXO = 'Exo 2';
 
 <!DOCTYPE html>
 <html lang="fr"> <!-- Langue FR -->
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel='stylesheet' type='text/css' media='screen' href='../../global.css'> <!-- Assignement du CSS -->
-        <meta name="description" content="Site concernant <?php echo $EXO?> "> <!-- Description pour SEO -->
-        <link rel="shortcut icon" href="img/Avatar.png"> <!-- Icone de page -->
-        <title>Nicolas - PHP - <?php echo $EXO?></title> <!-- Titre Page -->
-    </head>
+<?php
+	include "../Function-Web.php" ; // Include des fonctions
+	$FILE_LOCAL = basename(__FILE__) ; // Définition d'une variable ayant le nom de la page.
+	$File_Name = basename(__FILE__, ".php") ; // Définition du Nom de la page.
+
+    Head($FILE_LOCAL) ;
+?>
     <!-- Début Header / Menu -->
-    <header>
-        <div class="Menu-Nav">
-            <nav>
-                <ul class="Menu">
-                    <li class="Logo"><img src="img/Avatar.png" alt="Logo"></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+
     <!-- Fin Header / Menu -->
 
     <!-- body -->
     <body>
+        <?php
+            Menu()
+        ?>
         <div>
             <h1 class="TC"><?php echo "$EXO" ?></h1>
         </div>
@@ -74,6 +68,46 @@ $EXO = 'Exo 2';
             <p>Cela me donne en résultat :</p>
             <img src="liens" alt="Résultat">
         </div>
+
+
+        <div class="Div1">
+            <p>SELECT * FROM 'Patient','Consultation' WHERE 'Patient'.'IdPatient' = 'Consultation'.'IdPatient'</p>
+        </div>
+        <div class="Div1">
+            <p>SELECT * FROM 'Consultation' WHERE 'Date" > '18h00'</p>
+        </div>
+        <div class="Div1">
+            <p>SELECT 'Nom','Prénom' FROM 'Medecin' ODER BY 'Nom'</p>
+        </div>
+        <div class="Div1">
+            <p> SELECT 'Medecin'.'Nom' AS 'Medecin', 'Patient'.'Nom' AS 'Malade'
+                FROM 'Medecin','Patient','Consultation'
+                WHERE 'Medecin'.'IdMedecin' = 'Consultation'.'IdMedecin' AND
+                'Patient'.'IdPatient' = 'Consultation'.'IdPatient'</p>
+        </div>
+        <div class="Div1">
+            <p>SELECT COUNT('Medicament'.'Nom'), AVG(Medicament'.'Prix') FROM 'Medicament'</p>
+        </div>
+        <div class="Div1">
+            <p></p>
+        </div>
+        <div class="Div1">
+            <p></p>
+        </div>
+        <div class="Div1">
+            <p></p>
+        </div>
+        <div class="Div1">
+            <p></p>
+        </div>
+
+
+
+
+
+
+
+
     </body>
 
         <?php
