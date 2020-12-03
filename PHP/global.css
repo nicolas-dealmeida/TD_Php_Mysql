@@ -71,86 +71,116 @@ background-color: blue;
 }
 
 
-/*          CSS MENU            */
+/*          CSS FLEXBOX MENU         */
 
-.Menu-Nav ul { /* S'applique sur la liste */
-    margin: 0px;
-    padding: 0px;
+.Menu {
     background: #0D1F2D;
-    list-style:none;
-} 
-
-.Menu-Nav a { /* S'applique sur les liens dans le menu */
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-    
-    display: block;
-    text-align:center;
-    text-decoration: none;
-    color: #EEEEEE;
-    font-size: 22px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.25);
+    font-size: 25px;
 }
 
-.Menu a:hover { /*CSS des liens lors du survole du curseur */
+.Menu-Nav ul { /* S'applique sur la liste du Menu */
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    background: #0D1F2D;
+}
+
+.Menu-Nav a { /* S'applique sur les liens dans le menu */
+    padding-top: 2.0%;
+    padding-bottom: 2.0%;
+
+    padding-left: 30px;
+    padding-right: 30px;
+
+    display: block;
+    text-decoration: none;
+    color: #EEEEEE;
+}
+
+.Menu a:hover { /* CSS des liens lors du survole du curseur */
     text-decoration: underline white;
 }
 
 .Menu-Nav .Menu {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row wrap; /* Permet que le menu se mette à la suite en retour de ligne */
     justify-content: center;
-    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.40);
 }
 
 
-                                    /* ATTENTION : SOUS-MENU */
+/* ATTENTION : SOUS-MENU */
 
-.Sous-Menu-1 { 
+.Sous-Menu-1, .Sous-Menu-S1-1 { /* Menu de base affiché */
     position: relative;
 }
 
-.Sous-Menu-1:hover > .Sous-Menu-2a { /* Active le sous menu lors du survole*/
+.Sous-Menu-1:hover>.Sous-Menu-S1 { /* Menu de base affiché -> Active Sous Menu 1*/
     display: flex;
 }
-.Sous-Menu-1:hover > .Sous-Menu-2b { /* Active le sous menu lors du survole*/
+.Sous-Menu-S1-1:hover>.Sous-Menu-S1-A { /* Menu de base affiché -> Active Sous Menu 1*/
     display: flex;
 }
-.Sous-Menu-1:active > .Sous-Menu-2a { /* Active le sous menu lors du survole*/
-    display: flex;
-}
-.Sous-Menu-1:active > .Sous-Menu-2b { /* Active le sous menu lors du survole*/
+.Sous-Menu-S1-1:hover>.Sous-Menu-S1-B { /* 1er Sous Menu A (Donc EPK/FUZ/PAL) */
     display: flex;
 }
 
-.Sous-Menu-2a { /* Sous Menu Pies */
-    display: none ; 
+.Sous-Menu-S1 a { /* Formatage Texte sur le premier Sous-Menu, héréditaire */
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    justify-content: center;
+}
+
+.Sous-Menu-S1-B.is-active, .Sous-Menu-S1-B.is-active, .Sous-Menu-S1.is-active { /* 3ème Sous Menu A et B (Donc F/S, F/M/S et ES/F/M/S/Y) */
+    display: flex;
+}
+
+.Sous-Menu-S1 { /* Groupe de Sous Menu : Formatage Taille, Emplacement, Bordure */
+    display: none;
     flex-flow: column wrap;
-    min-width: 205px;
     position: absolute;
+    left: 28px;
+    border-style: groove;
+    border-color: white;
+    font-size: 20px;
 }
-.Sous-Menu-2b { /* Sous Menu CV */
-    display: none ; 
+.Sous-Menu-S1-A { /* 1er Sous Menu (Donc HTML / CSS) */
+    display: none;
     flex-flow: column wrap;
-    min-width: 205px;
+    min-width: 135px;
     position: absolute;
+    top: -3px;
+    left: 128px;
+    border-style: groove;
+    border-color: white;
+}
+.Sous-Menu-S1-B { /* 2ème Sous Menu (Donc PHP et SQL / BDD) */
+    display: none;
+    flex-flow: column wrap;
+    min-width: 135px;
+    position: absolute;
+    top: -3px;
+    left: 57px;
+    border-style: groove;
+    border-color: white;
 }
 
-.Sous-Menu-2a.is-active { /* Active le sous menu lors du survole*/
-    display: flex;
-}
-.Sous-Menu-2b.is-active { /* Active le sous menu lors du survole */
-    display: flex;
-}
+/*          Fond Image Des Divs            */
 
-.Sous-Menu-2a a {
-    text-align: left;
-}
-.Sous-Menu-2b a {
-    text-align: left;
-}
+@media (max-width: 480px) { /* S'applique si téléphone ou petit écrans. */
+    .Menu {
+        font-size: 20px;
+    }
+    .Menu-Nav a {
+        padding-top: 1.0%;
+        padding-bottom: 1.0%;
 
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
 
 /*          CSS MEDIA            */
 
