@@ -35,6 +35,6 @@
         </div>
     </body>
     <footer>
-        <p class="TexteCentre"><a href="index.html" rel="stylesheet">Retour</a>.</p>
+        <p class="TexteCentre"><a href="index.php" rel="stylesheet">Retour</a>.</p>
     </footer>
 </html>

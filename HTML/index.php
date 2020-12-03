@@ -15,12 +15,12 @@
         <?php
             Menu() ;
         ?>
-        <p class="marge-p-index">Lien vers : <a href="Exo1.html" rel="stylesheet">Exo1</a>.</p>
-        <p class="marge-p-index">Lien vers : <a href="Exo2.html" rel="stylesheet">Exo2</a>.</p>
-        <p class="marge-p-index">Lien vers : <a href="Exo3.html" rel="stylesheet">Exo3</a>.</p>
+        <p class="marge-p-index">Lien vers : <a href="Exo1.php" rel="stylesheet">Exo1</a>.</p>
+        <p class="marge-p-index">Lien vers : <a href="Exo2.php" rel="stylesheet">Exo2</a>.</p>
+        <p class="marge-p-index">Lien vers : <a href="Exo3.php" rel="stylesheet">Exo3</a>.</p>
 
-        <p class="marge-p-index">Lien vers : <a href="ExoCSS_1.html" rel="stylesheet">Exo_1</a>.</p>
+        <p class="marge-p-index">Lien vers : <a href="ExoCSS_1.php" rel="stylesheet">Exo_1</a>.</p>
         <p class="marge-p-index">Lien vers : <a href="ExoCSS_2.css" rel="stylesheet">Exo_2</a>.</p>
-        <p class="marge-p-index">Lien vers : <a href="Formulaire.html" rel="stylesheet">Formulaire</a>.</p>
+        <p class="marge-p-index">Lien vers : <a href="Formulaire.php" rel="stylesheet">Formulaire</a>.</p>
     </body>
 </html>
