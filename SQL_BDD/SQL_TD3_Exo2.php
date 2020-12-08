@@ -1,9 +1,3 @@
-<!-- Déclaration des Variables PHP -->
-
-<?php
-$EXO = 'Exo 2';
-?>
-
 <!DOCTYPE html>
 <html lang="fr"> <!-- Langue FR -->
 <?php
@@ -23,7 +17,7 @@ $EXO = 'Exo 2';
             Menu()
         ?>
         <div>
-            <h1 class="TC"><?php echo "$EXO" ?></h1>
+            <h1 class="TC"><?php echo "$File_Name" ?></h1>
         </div>
 
         <div class="Div1">
@@ -64,10 +58,7 @@ $EXO = 'Exo 2';
                 ?>
         </div>
 
-        <div class="Div1">
-            <p>Cela me donne en résultat :</p>
-            <img src="liens" alt="Résultat">
-        </div>
+                    <!-- Suite sans Mise en place -->
 
 
         <div class="Div1">
