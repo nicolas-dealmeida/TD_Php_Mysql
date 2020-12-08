@@ -57,7 +57,7 @@ Function Menu() // Fonction affichant le menu.
         <div class='Menu-Nav'>
             <nav>
 				<ul class='Menu'>
-				<li class='Sous-Menu-1'><a href='..\Config\Accueil.php'>Accueil</a></li>
+				    <li class='Sous-Menu-1'><a href='..\Config\Accueil.php'>Accueil</a></li>
                     <li class='Sous-Menu-1'><a href='..\HTML\index.php'>HTML/CSS</a>
                         <ul class='Sous-Menu-S1'>
                             <li class='Sous-Menu-S1-1'><a href='..\HTML\index.php#HTML'>HTML</a>
@@ -108,10 +108,10 @@ Function Menu() // Fonction affichant le menu.
                                     <li><a href='..\SQL_BDD\BDD_TD1_Exo1.php'>Exercice 1</a></li>
                                     <li><a href='..\SQL_BDD\BDD_TD1_Exo2.php'>Exercice 2</a></li>
 									<li><a href='..\SQL_BDD\BDD_TD1_Exo3.php'>Exercice 3</a></li>
-									<li><a href='..\SQL_BDD\BDD_TD1_Exo3.php'>Exercice 4</a></li>
-									<li><a href='..\SQL_BDD\BDD_TD1_Exo3.php'>Exercice 5</a></li>
-									<li><a href='..\SQL_BDD\BDD_TD1_Exo3.php'>Exercice 6</a></li>
-									<li><a href='..\SQL_BDD\BDD_TD1_Exo3.php'>Exercice 7</a></li>
+									<li><a href='..\SQL_BDD\BDD_TD1_Exo4.php'>Exercice 4</a></li>
+									<li><a href='..\SQL_BDD\BDD_TD1_Exo5.php'>Exercice 5</a></li>
+									<li><a href='..\SQL_BDD\BDD_TD1_Exo6.php'>Exercice 6</a></li>
+									<li><a href='..\SQL_BDD\BDD_TD1_Exo7.php'>Exercice 7</a></li>
                                 </ul>
                             </li>
                             <li class='Sous-Menu-S1-1'><a href='#'>TD2</a>
