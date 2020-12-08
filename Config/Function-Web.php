@@ -99,13 +99,6 @@ Function Menu() // Fonction affichant le menu.
 									<li><a href='..\PHP\PHP_Partie2_ExoFinal.php'>TP Final</a></li>
                                 </ul>
                             </li>
-                            <!-- <li class='Sous-Menu-S1-1'><a href='#'>TD3</a>
-                                <ul class='Sous-Menu-S1-B'>
-                                    <li><a href='..\PHP\TD_3_Exo1.php'>Exercice 1</a></li>
-                                    <li><a href='..\PHP\TD_3_Exo2.php'>Exercice 2</a></li>
-                                    <li><a href='..\PHP\TD_3_Exo3.php'>Exercice 3</a></li>
-                                </ul>
-                            </li> -->
                         </ul>
                     </li>
                     <li class='Sous-Menu-1'><a href='#'>SQL / BDD</a>
@@ -129,7 +122,6 @@ Function Menu() // Fonction affichant le menu.
 							<li class='Sous-Menu-S1-1'><a href='#'>TD3</a>
                                 <ul class='Sous-Menu-S1-B'>
                                     <li><a href='..\SQL_BDD\SQL_TD3_Exo2.php'>Exercice 2</a></li>
-                                    <li><a href='..\SQL_BDD\SQL_TD3_Exo3.php'>Exercice 3</a></li>
                                 </ul>
 							</li> 
 							<li class='Sous-Menu-S1-1'><a href='#'>TD4</a>

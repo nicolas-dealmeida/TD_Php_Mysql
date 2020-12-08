@@ -95,8 +95,8 @@ background-color: blue;
 }
 
 .Menu-Nav a { /* S'applique sur les liens dans le menu */
-    padding-top: 2.0%;
-    padding-bottom: 2.0%;
+    padding-top: 4px;
+    padding-bottom: 4px;
 
     padding-left: 30px;
     padding-right: 30px;
@@ -160,7 +160,7 @@ background-color: blue;
     min-width: 135px;
     position: absolute;
     top: -3px;
-    left: 128px;
+    left: 127px;
     border-style: groove;
     border-color: white;
 }
@@ -170,7 +170,7 @@ background-color: blue;
     min-width: 135px;
     position: absolute;
     top: -3px;
-    left: 57px;
+    left: 60px;
     border-style: groove;
     border-color: white;
 }
@@ -234,4 +234,14 @@ color: blueviolet;
 
     margin-top: 1%;
     margin-bottom: 1%;
+}
+
+.PAD1 { /*CSS Padding Left de 1 */
+    margin-left: 1%;
+}
+.PAD2 { /*CSS Padding Left de 2 */
+    margin-left: 5%;
+}
+.PAD3 { /*CSS Padding Left de 3 */
+    margin-left: 10%;
 }
