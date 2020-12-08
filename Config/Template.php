@@ -6,6 +6,7 @@
 	$File_Name = basename(__FILE__, ".php") ; // Définition du Nom de la page.
 ?>
 
+<!-- Page Web -->
 <!DOCTYPE html>
 <html lang="fr"> <!-- Langue FR -->
     <?php
