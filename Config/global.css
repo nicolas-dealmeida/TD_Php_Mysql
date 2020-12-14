@@ -157,7 +157,7 @@ background-color: blue;
 .Sous-Menu-S1-A { /* 1er Sous Menu (Donc HTML / CSS) */
     display: none;
     flex-flow: column wrap;
-    min-width: 135px;
+    width: 125px;
     position: absolute;
     top: -3px;
     left: 127px;
@@ -167,7 +167,7 @@ background-color: blue;
 .Sous-Menu-S1-B { /* 2ème Sous Menu (Donc PHP et SQL / BDD) */
     display: none;
     flex-flow: column wrap;
-    min-width: 135px;
+    width: 125px;
     position: absolute;
     top: -3px;
     left: 60px;

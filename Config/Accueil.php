@@ -61,7 +61,9 @@
                     <p class="PAD3"><a href='..\SQL_BDD\BDD_TD1_Exo3.php'>Exercice 6</a></p>
                     <p class="PAD3"><a href='..\SQL_BDD\BDD_TD1_Exo3.php'>Exercice 7</a></p>
                 <h3 class="PAD2"><a href='#'>TD2</a></h3>
-                    <p class="PAD3"><a href='..\SQL_BDD\SQL_TD3_Exo2.php'>Exercice 2</a></p>
+                    <p class="PAD3"><a href='..\SQL_BDD\BDD_TD2_Exo1.php'>Exercice 1</a></p>
+                    <p class="PAD3"><a href='..\SQL_BDD\BDD_TD2_Exo2.php'>Exercice 2</a></p>
+                    <p class="PAD3"><a href='..\SQL_BDD\BDD_TD2_Exo3.php'>Exercice 3</a></p>
                 <h3 class="PAD2"><a href='#'>TD3</a></h3>
                     <p class="PAD3"><a href='..\SQL_BDD\SQL_TD3_Exo2.php'>Exercice 2</a></p>
                 <h3 class="PAD2"><a href='#'>TD4</a></h3>

@@ -116,7 +116,9 @@ Function Menu() // Fonction affichant le menu.
                             </li>
                             <li class='Sous-Menu-S1-1'><a href='#'>TD2</a>
                                 <ul class='Sous-Menu-S1-B'>
-                                    <li><a href='..\SQL_BDD\SQL_TD3_Exo2.php'>Exercice 2</a></li>
+									<li><a href='..\SQL_BDD\BDD_TD2_Exo1.php'>Exercice 1</a></li>
+									<li><a href='..\SQL_BDD\BDD_TD2_Exo2.php'>Exercice 2</a></li>
+									<li><a href='..\SQL_BDD\BDD_TD2_Exo3.php'>Exercice 3</a></li>
                                 </ul>
 							</li>
 							<li class='Sous-Menu-S1-1'><a href='#'>TD3</a>
