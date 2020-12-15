@@ -26,7 +26,8 @@
         </div>
 
         <div class="Div1"> 
-            <img src="img/TD_1_7.png" alt="TD 1 Exo 7">
+            <img src="img/TD_2_2.png" alt="TD 2 Exo 2">
+            <img src="img/TD_2_20.png" alt="TD 2 Exo 2">
         </div>
 
         <?php
