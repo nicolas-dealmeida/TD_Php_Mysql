@@ -25,43 +25,40 @@
         </div>
 
         <div class="Div1">
-                <?php
+              
+        <?php
+            include "Function.php" ;
+        ?>
 
-                $TableConnect1 = 'Patient' ; // Nom de la Table à la quelle je veut me connecter
-                $Lettre = 'B'; // Lettre du nom que je cible
-                echo "<p>Je vais afficher la liste des patients dont le nom commence par la lettre ".$Lettre.".</p>";
-                    try{
-                        // Connect à ma BDD et définition de l'objet BDD.
-                        $ConnectBDD = new PDO("mysql:host=192.168.64.106; dbname=Pie_TD1_Exo2; charset=utf8","PieTest", "PieTest");
-                        echo "<p>Je suis Connecté à ".$TableConnect1.".</p>";
-
-                        // Définition donné Brut
-                        $BrutBDD = $ConnectBDD->query("SELECT * FROM $TableConnect1 WHERE Nom LIKE '$Lettre%'"); // Je selectionne ce qui est dans la table et ayant la condition demandée
-
-                        echo"<table>
-                                <thead>
-                                    <tr>
-                                        <th>Nom</th>
-                                        <th>Prénom</th>
-                                    </tr>
-                                </thead>
-                                <tbody>";
-                        while($Result = $BrutBDD->fetch()){ // Tant que c'est possible
-                            echo "<tr><td>".$Result['Nom']."</td><td>".$Result['Prénom']."</td></tr>";
-                        };
-                        echo"
-                                </tbody>
-                            </table>";
-                        echo "<p>C'est bon, j'ai récupérer la liste des patients dont le nom commence par la lettre ".$Lettre.".</p>";
-                    }
-                    catch (Exception $e){ // Bon ba ça c'est si j'ai une erreur.
-                        Echo "<p>Erreur : ".$e ->getMessage()."</p>";
-                        echo "<p>Je n'ai pas réussi à afficher ce que je demandé.</p>";
-                    }
+        <div class="Div1">
+            <form action="" method="post">
+                <label for="name">SELECT `Nom`,`Prénom`,`NumSS` FROM `Patient` WHERE </label>
+                <select name="option1" id="option1">
+                    <option value="1">1</option>
+                    <option value="Nom">Nom</option>
+                    <option value="Prénom">Prénom</option>
+                    <option value="NumSS">NumSS</option>
+                </select>
+                <select name="option2" id="option2">
+                    <option value="">--</option>
+                    <option value="=">=</option>
+                    <option value="LIKE">LIKE</option>
+                    <option value="ORDER BY">ORDER BY</option>
+                </select>
+                <input type="text" name="recherche" id="recherche"> 
+                <input type="submit" name="submit" value="Envoyer">
+            </form>
+            <?php
+                if(isset($_POST['recherche'])){
+                    afficher_requet($_POST['option1'], $_POST['option2'], $_POST['recherche']);
+                }else{
                     
-                ?>
+                }
+            ?>
+            <form action="" method="post">
+                <input type="submit" name="submit2" value="Deconnexion">    
+            </form>
         </div>
-
         <?php
             Highlight($FILE_LOCAL)
         ?>
