@@ -32,7 +32,7 @@
                 echo "<p>Je vais afficher la liste des patients dont le nom commence par la lettre ".$Lettre.".</p>";
                     try{
                         // Connect à ma BDD et définition de l'objet BDD.
-                        $ConnectBDD = new PDO("mysql:host=192.168.64.106; dbname=Pie_TD1_Exo2; charset=utf8","PieTest", "PieTest");
+                        $ConnectBDD = new PDO("mysql:host=192.168.64.106; dbname=Pie_TD1_Medecin; charset=utf8","PieTest", "PieTest");
                         echo "<p>Je suis Connecté à ".$TableConnect1.".</p>";
 
                         // Définition donné Brut

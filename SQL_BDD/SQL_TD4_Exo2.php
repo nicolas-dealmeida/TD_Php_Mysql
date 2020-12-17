@@ -34,13 +34,11 @@
             <form action="" method="post">
                 <label for="name">SELECT `Nom`,`Prénom`,`NumSS` FROM `Patient` WHERE </label>
                 <select name="option1" id="option1">
-                    <option value="1">1</option>
                     <option value="Nom">Nom</option>
                     <option value="Prénom">Prénom</option>
                     <option value="NumSS">NumSS</option>
                 </select>
                 <select name="option2" id="option2">
-                    <option value="">--</option>
                     <option value="=">=</option>
                     <option value="LIKE">LIKE</option>
                     <option value="ORDER BY">ORDER BY</option>

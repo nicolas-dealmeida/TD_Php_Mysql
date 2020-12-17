@@ -43,5 +43,14 @@ Function afficher_requet($requete1, $requete2, $requete3){ // Affiche la requett
 }
 
 
-
+Function ajoutPatient($Requete1, $Requete2){    
+    try	{	
+        $Requete="INSERT INTO Patient(nom, prenom) VALUES('".$Requete1."', '".$Requete2."')";
+        echo $Requete;
+        $BDD=new PDO("mysql:host=192.168.64.106; dbname=Pie_TD1_Medecin; charset=utf8","PieTest", "PieTest");
+        $Brute=$BDD->query($Requete);
+    }catch(Exception$e)	{
+        die('Erreur	: '.$e->getMessage());	
+    }
+}
 ?>
