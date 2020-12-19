@@ -127,7 +127,7 @@ Function TABLEAU3($VA1,$VA2,$VA3,$MOYENNE) {
 // Formulaire Final
 Function FORMFINAL($MDP,$VERIF_MDP) {
 
-    session_start() ;
+    //session_start() ; // Déja apellé dans le Fonction Web Header.
 
     if (isset($_SESSION['VERIF'])) { // Si Session VERIF True, alors met directement le Lien Secret.
         if($_SESSION['VERIF'] == TRUE) { 

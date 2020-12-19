@@ -17,6 +17,7 @@
 
 Function Head($FILE_LOCAL) // Fonction pour le Head et les metas de page.
 {
+	session_start ();
 	$File_Format = "UTF-8" ; // Définition du Format d'encodage.
 	$File_CSS = "../Config/global.css" ; // Définition du Fichier CSS correspondant.
 	$File_Name = basename($FILE_LOCAL, ".php") ; // Définition du Nom de la page.
@@ -141,25 +142,16 @@ Function Menu() // Fonction affichant le menu.
 	<?php
 }
 
-
 Function Highlight($FILE_LOCAL) // Fonction affichant le highlight_file.
 {
 	?>
 	<footer>
 		<div class='Div1'>
 			<p>Code Source du site :</p>
-	<?php highlight_file($FILE_LOCAL) ?>
+			<?php highlight_file($FILE_LOCAL) ?>
 		</div>
 	</footer>
 	<?php
-}
-
-
-
-Function Insert_Post($Post_Insert) // Fonction affichant le highlight_file.
-{
-
-	
 }
 
 

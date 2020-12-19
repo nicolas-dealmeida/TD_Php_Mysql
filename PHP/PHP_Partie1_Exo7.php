@@ -31,7 +31,7 @@ $EXO = 'Exo7';
                 <input type="submit" name="Envoyer" onclick="document.location.reload(false)">
             </p></form>
             <?php
-                session_start();
+                //session_start(); // Déja apellé dans le Fonction Web Header.
                     if(isset($_POST['Texte'])){
                         $Texte = $_POST['Texte'];
                         echo '</div><div class="Div1"><p>Le texte écrit est : '.$Texte.'</p>';

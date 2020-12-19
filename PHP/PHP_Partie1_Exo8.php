@@ -31,7 +31,7 @@ $EXO = 'Exo8';
                 <input type="submit" name="Envoyer">
             </p></form>
             <?php
-                session_start();
+                //session_start(); // Déja apellé dans le Fonction Web Header.
                 if (isset($_POST['Delet'])){
                     unset($_SESSION['Texte1']);
                     echo '</div><div class="Div1"><p>DESTROY</p>';

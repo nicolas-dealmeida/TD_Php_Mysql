@@ -29,7 +29,7 @@
         <?php
             include "Function.php" ;
 
-            session_start ();
+            // session_start (); // Déja apellé dans le Fonction Web Header.
             if(isset($_POST['submit2'])) { // Deco
                 session_unset();
                 session_destroy();
