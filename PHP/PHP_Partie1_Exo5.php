@@ -7,7 +7,6 @@
 
 <?php
 $EXO = 'Exo5';
-
 ?>
 
 <!DOCTYPE html>
