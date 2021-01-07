@@ -13,9 +13,9 @@
         Head($FILE_LOCAL) ;
     ?>
     <body>
-    <?php
-        Menu() ;
-    ?>
+        <?php
+            Menu() ;
+        ?>
 
         <div>
             <h1 class="TITRE">
